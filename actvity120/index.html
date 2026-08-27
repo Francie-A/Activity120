@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sun Son Solar | Power your brighter tomorrow</title>
+  <meta name="description" content="Sun Son Solar makes clean energy simple for homes and small businesses.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="shell">
+    <nav aria-label="Main navigation">
+      <div class="menu-area"><a class="menu-toggle" href="#menu" aria-expanded="false" aria-controls="nav-menu"><span aria-hidden="true">&#9776;</span></a>
+        <div class="nav-menu" id="nav-menu"><a href="#impact">Contacts</a>
+          <a href="#how-it-works">History</a>
+          <a href="DelRosario_registration.html">Log in</a>
+        </div>
+      </div>
+      <a class="brand" href="index.html"><span class="brand-dot"></span> SUN SON SOLAR</a>
+      <a class="button sun" href="delrosario_bookingpage.html">Get started</a>
+    </nav>
+  </header>
+  <main>
+    <section class="shell hero">
+      <div>
+        <div class="eyebrow">Clean solar energy</div>
+        <h1>Power a brighter day.</h1>
+        <p>Sun Son Solar makes clean energy simple for homes and small businesses.</p>
+        <div class="hero-actions"><a class="button" href="delrosario_bookingpage.html">Start your solar story</a><a class="text-link" href="#how-it-works">See how it works</a></div>
+      </div>
+      <div class="sun-stage" aria-label="Illustration of the sun">
+      </div>
+      <div class="panel-strip" aria-label="Solar panel styles">
+        <figure><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80" alt="Solar panels on a roof"><figcaption>Roof panels</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=700&q=80" alt="Solar panels in a field"><figcaption>Ground arrays</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=700&q=80" alt="Solar panels in sunlight"><figcaption>Smart solar</figcaption></figure>
+      </div>
+    </section>
+    <section class="shell product-gallery" id="products">
+      <div class="product-info">
+        <div class="eyebrow">Solar products</div>
+        <h2>Find your fit.</h2>
+        <div class="product-point"><strong>Roof panels</strong><span>Clean power for everyday homes.</span></div>
+        <div class="product-point"><strong>Ground arrays</strong><span>Flexible energy for open spaces.</span></div>
+        <div class="product-point"><strong>Battery storage</strong><span>Keep extra sunshine for later.</span></div>
+      </div>
+      <div class="gallery-scroll" aria-label="Solar product gallery">
+        <article><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=85" alt="Roof-mounted solar panel system"><h3>Roof panels</h3></article>
+        <article><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=85" alt="Ground-mounted solar panel array"><h3>Ground arrays</h3></article>
+        <article><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85" alt="Solar panels in bright sunlight"><h3>Battery storage</h3></article>
+      </div>
+    </section>
+    <section class="shell cta"><h2>Ready to put your roof to work?</h2><a class="button" href="delrosario_bookingpage.html">Register for a consultation <span aria-hidden="true">&#8599;</span></a></section>
+  </main>
+  <footer><div class="shell">Copyright 2026 Sun Son Solar <span aria-hidden="true">|</span> Clean energy for everyday life.</div></footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    menuToggle.addEventListener('click', function (event) {
+      event.preventDefault();
+      const isOpen = navMenu.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
