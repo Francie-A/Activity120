@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Staff Registration | Sun Son Solar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="shell"><nav><a class="brand" href="index.html"><span class="brand-dot"></span> SUN SON SOLAR</a><a class="back" href="index.html">&larr; Back home</a></nav></header>
+    <main class="shell registration-main">
+        <form id="registration-form">
+            <div class="form-top"><h2>Create your staff profile</h2><span class="required">* Required</span></div>
+            <div class="fields">
+                <div><label for="first-name">First name *</label><input id="first-name" name="firstName" autocomplete="given-name" required></div>
+                <div><label for="last-name">Last name *</label><input id="last-name" name="lastName" autocomplete="family-name" required></div>
+                <div><label for="email">Work email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                <div><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <label class="consent"><input type="checkbox" required> <span>I confirm that these staff details are accurate. *</span></label>
+            <button class="submit" type="submit">Create staff profile</button>
+            <p class="success" id="success" role="status">Welcome, <span id="success-name"></span>. Your staff profile is ready.</p>
+        </form>
+    </main>
+    <footer><div class="shell">Copyright 2026 Sun Son Solar <span aria-hidden="true">|</span> Clean energy for everyday life.</div></footer>
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('success-name').textContent = document.getElementById('first-name').value;
+            document.getElementById('success').style.display = 'block';
+            this.querySelector('.submit').textContent = 'Staff profile created';
+            this.querySelector('.submit').disabled = true;
+        });
+    </script>
+</body>
+</html>
